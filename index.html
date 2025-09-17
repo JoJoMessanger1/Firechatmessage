@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dezentraler Gruppen-Messenger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dezentraler Gruppen-Messenger 💬</h1>
+        <p>Deine ID: <span id="my-id"></span></p>
+        
+        <div class="group-creation">
+            <h2>Neue Gruppe erstellen</h2>
+            <input type="text" id="group-name-input" placeholder="Gruppenname">
+            <input type="text" id="member-ids-input" placeholder="Mitglieder-IDs (mit Komma trennen)">
+            <button id="create-group-btn">Gruppe erstellen</button>
+        </div>
+        
+        <div id="groups-list">
+            <h2>Deine Gruppen</h2>
+        </div>
+
+        <div id="chat-window" style="display:none;">
+            <h2 id="current-group-name"></h2>
+            <div id="messages"></div>
+            <div class="message-input-area">
+                <input type="text" id="message-input" placeholder="Nachricht eingeben...">
+                <button id="send-btn">Senden</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
